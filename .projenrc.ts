@@ -5,9 +5,16 @@ const project = new awscdk.AwsCdkTypeScriptApp({
   name: "stream-process-example",
   projenrcTs: true,
 
-  // deps: [],                /* Runtime dependencies of this module. */
-  // description: undefined,  /* The description is just a string that helps people understand the purpose of the package. */
-  // devDeps: [],             /* Build dependencies for this module. */
-  // packageName: undefined,  /* The "name" in package.json. */
+  deps: [
+    '@aws-cdk/aws-glue-alpha@2.22.0-alpha.0',
+    '@aws-cdk/aws-kinesisfirehose-alpha@2.22.0-alpha.0',
+    '@aws-cdk/aws-kinesisfirehose-destinations-alpha@2.22.0-alpha.0',
+  ],
+  devDeps: [
+    '@types/aws-lambda',
+  ],
+  gitignore: [
+    '.venv',
+  ],
 });
 project.synth();

@@ -1,6 +1,10 @@
 {
   "dependencies": [
     {
+      "name": "@types/aws-lambda",
+      "type": "build"
+    },
+    {
       "name": "@types/jest",
       "type": "build"
     },
@@ -81,6 +85,21 @@
     {
       "name": "typescript",
       "type": "build"
+    },
+    {
+      "name": "@aws-cdk/aws-glue-alpha",
+      "version": "2.22.0-alpha.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-kinesisfirehose-alpha",
+      "version": "2.22.0-alpha.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-kinesisfirehose-destinations-alpha",
+      "version": "2.22.0-alpha.0",
+      "type": "runtime"
     },
     {
       "name": "aws-cdk-lib",
